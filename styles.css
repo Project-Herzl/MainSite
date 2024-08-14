@@ -6,12 +6,19 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #111;
+    background-image: url('israel-flag.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     overflow: hidden;
 }
 
 .container {
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 h1 {
@@ -23,6 +30,7 @@ h1 {
         0 0 20px #0ff,
         0 0 40px #0ff;
     animation: pulse 2s infinite alternate;
+    margin: 0;
 }
 
 .coming-soon {
