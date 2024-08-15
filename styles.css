@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 h1 {
@@ -28,6 +28,7 @@ h1 {
         0 0 20px #0ff,
         0 0 40px #0ff;
     animation: neonPulse 2s infinite alternate;
+    margin: 0;
 }
 
 .coming-soon {
