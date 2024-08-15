@@ -10,11 +10,11 @@ function setup() {
   canvas.style('z-index', '-1');
   
   colorPalette = [
-    color(65, 105, 225),  // colour Royal Blue
-    color(30, 144, 255),  // coloring Dodger Blue
-    color(0, 191, 255),   // this is of the colors Deep Sky Blue
-    color(135, 206, 235), // this is colors Sky Blue
-    color(173, 216, 230)  // this colors Light Blue
+    color(65, 105, 225),  
+    color(30, 144, 255),  
+    color(0, 191, 255),   
+    color(135, 206, 235), 
+    color(173, 216, 230)  
   ];
   
   for (let i = 0; i < 1000; i++) {
