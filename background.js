@@ -10,11 +10,11 @@ function setup() {
   canvas.style('z-index', '-1');
   
   colorPalette = [
-    color(65, 105, 225),  // Royal Blue
-    color(30, 144, 255),  // Dodger Blue
-    color(0, 191, 255),   // Deep Sky Blue
-    color(135, 206, 235), // Sky Blue
-    color(173, 216, 230)  // Light Blue
+    color(65, 105, 225),
+    color(30, 144, 255),
+    color(0, 191, 255),
+    color(135, 206, 235),
+    color(173, 216, 230) 
   ];
   
   for (let i = 0; i < 1000; i++) {
@@ -61,3 +61,35 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   background(0);
 }
+
+function calculateTargetDate() {
+    let currentDate = new Date();
+    let targetDate = new Date();
+    targetDate.setMonth(currentDate.getMonth() + 3);
+    targetDate.setDate(currentDate.getDate() + 5);
+    return targetDate;
+}
+
+function updateCountdown() {
+    let now = new Date().getTime();
+    let targetDate = calculateTargetDate().getTime();
+    let distance = targetDate - now;
+    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    days = String(days).padStart(2, '0');
+    hours = String(hours).padStart(2, '0');
+    minutes = String(minutes).padStart(2, '0');
+    seconds = String(seconds).padStart(2, '0');
+    document.getElementById("countdown").innerHTML = 
+        `${days}:${hours}:${minutes}:${seconds}`;
+
+    if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown").innerHTML = "The event has started!";
+    }
+}
+
+let countdownInterval = setInterval(updateCountdown, 1000);
+
