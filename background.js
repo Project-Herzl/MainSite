@@ -64,7 +64,7 @@ function windowResized() {
 
 function calculateTargetDate() {
     let currentDate = new Date();
-    let targetDate = new Date();
+    let targetDate = new Date(currentDate);
     targetDate.setMonth(currentDate.getMonth() + 3);
     targetDate.setDate(currentDate.getDate() + 5);
     return targetDate;
@@ -74,16 +74,18 @@ function updateCountdown() {
     let now = new Date().getTime();
     let targetDate = calculateTargetDate().getTime();
     let distance = targetDate - now;
+
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
     days = String(days).padStart(2, '0');
     hours = String(hours).padStart(2, '0');
     minutes = String(minutes).padStart(2, '0');
     seconds = String(seconds).padStart(2, '0');
-    document.getElementById("countdown").innerHTML = 
-        `${days}:${hours}:${minutes}:${seconds}`;
+
+    document.getElementById("countdown").innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
 
     if (distance < 0) {
         clearInterval(countdownInterval);
@@ -92,4 +94,3 @@ function updateCountdown() {
 }
 
 let countdownInterval = setInterval(updateCountdown, 1000);
-
