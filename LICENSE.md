@@ -54,6 +54,7 @@ b. Additional offer from the Licensor -- Adapted Material. Every recipient of Ad
 c. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.
 
 No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).
+
 b. Other rights.
 
 Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.
@@ -85,7 +86,7 @@ b. indicate if You modified the Licensed Material and retain an indication of an
 
 c. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
 
-You must always provide a link to ProjectHerzl.com as the source when giving credit for the Licensed Material.
+You must always provide a link to ProjectHerzl.com OR mention the same as or anything similar to 'From Project-Herzl' as the source when giving credit for the Licensed Material.
 
 You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
 
@@ -133,7 +134,7 @@ b. If the Licensor terminates this Public License for Your breach of its terms, 
 
 Section 7 -- Miscellaneous.
 
-a. Governing Law. This Public License is governed by the laws of the jurisdiction specified by the Licensor, without regard to its conflict of laws principles.
+a. Governing Law. This Public License is governed by the laws of the jurisdiction of Israel.
 
 b. Dispute Resolution. Any disputes arising from or related to this Public License shall be resolved in the jurisdiction specified by the Licensor.
 
