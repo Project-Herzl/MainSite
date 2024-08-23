@@ -86,7 +86,7 @@ b. indicate if You modified the Licensed Material and retain an indication of an
 
 c. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
 
-You must always provide a link to ProjectHerzl.com OR mention the same as or anything similar to 'From Project-Herzl' as the source when giving credit for the Licensed Material.
+You must always give credit for the licensed material, and provide a link to ProjectHerzl.com OR mention the same as or anything similar to 'From Project-Herzl' as the source when giving credit for the Licensed Material.
 
 You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
 
