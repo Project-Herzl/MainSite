@@ -76,6 +76,6 @@ function createFooter() {
   footer.style.zIndex = '10';
   footer.style.width = '100%';
   footer.style.boxSizing = 'border-box';
-  footer.innerHTML = '© 2024 Project Herzl. All rights reserved. <a href="license.md" style="color: #0ff;">License Information</a>.';
+  footer.innerHTML = '© 2024 Project Herzl. All rights reserved. <a href="LICENSE.md" style="color: red;">License Information</a>.';
   document.body.appendChild(footer);
 }
