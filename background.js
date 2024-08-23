@@ -22,6 +22,8 @@ function setup() {
   }
   
   background(0);
+  
+  createFooter();
 }
 
 function draw() {
@@ -60,4 +62,20 @@ function onScreen(v) {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
   background(0);
+}
+
+function createFooter() {
+  let footer = document.createElement('footer');
+  footer.style.position = 'fixed';
+  footer.style.bottom = '0';
+  footer.style.left = '0';
+  footer.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+  footer.style.color = '#0ff';
+  footer.style.padding = '10px';
+  footer.style.fontSize = '0.9rem';
+  footer.style.zIndex = '10';
+  footer.style.width = '100%';
+  footer.style.boxSizing = 'border-box';
+  footer.innerHTML = '© 2024 Project Herzl. All rights reserved. <a href="license.md" style="color: #0ff;">License Information</a>.';
+  document.body.appendChild(footer);
 }
