@@ -22,7 +22,7 @@ h. Licensed Material means the artistic or literary work, database, or other mat
 
 i. Licensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.
 
-j. Licensor means the individual(s) or entity(ies) granting rights under this Public License, here it is A.M.Y.D Projects organization on github.
+j. Licensor means the individual(s) or entity(ies) granting rights under this Public License, here it is Project-Herzl organization on Github and Project-Herzl group on Gitlab, both of whom are owned by A.M.Y.D Projects organization on github.
 
 k. Share means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.
 
