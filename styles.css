@@ -10,7 +10,7 @@
             background-color: #f4f4f4;
         }
 
-        /* Header styling */
+
         header {
             background-color: #333;
             color: white;
@@ -27,7 +27,6 @@
             font-size: 1.1em;
         }
 
-        /* Hero section */
         .hero {
             padding: 2.5em 1em;
             text-align: center;
@@ -45,7 +44,6 @@
             margin-bottom: 1em;
         }
 
-        /* Subdomain links */
         .subdomain-section {
             padding: 2em 1em;
             background-color: #fff;
@@ -81,7 +79,6 @@
             background-color: #4752C4;
         }
 
-        /* Discord button */
         .discord-button {
             display: inline-block;
             background-color: #5865F2;
@@ -98,7 +95,6 @@
             background-color: #4752C4;
         }
 
-        /* Footer styling */
         footer {
             background-color: #333;
             color: white;
