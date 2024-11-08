@@ -1,110 +1,162 @@
+
 * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
-        body {
-            color: #333;
-            background-color: #f4f4f4;
-        }
+body {
+  color: #333;
+  font-size: 16px;
+}
 
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1.5em;
-            text-align: center;
-        }
+h1 {
+  font-size: 2.5rem;
+}
 
-        header h1 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
-        }
+h2 {
+  font-size: 2rem;
+}
 
-        header p {
-            font-size: 1.1em;
-        }
+h3 {
+  font-size: 1.5rem;
+}
 
-        .hero {
-            padding: 2.5em 1em;
-            text-align: center;
-            background-color: #5865F2;
-            color: white;
-        }
+a {
+  color: #5865F2;
+  text-decoration: none;
+}
 
-        .hero h2 {
-            font-size: 1.8em;
-            margin-bottom: 0.5em;
-        }
+header {
+  background-color: #333;
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        .hero p {
-            font-size: 1.1em;
-            margin-bottom: 1em;
-        }
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
 
-        .subdomain-section {
-            padding: 2em 1em;
-            background-color: #fff;
-            text-align: center;
-        }
+header nav a {
+  color: white;
+}
 
-        .subdomain-section h2 {
-            color: #5865F2;
-            margin-bottom: 1em;
-            font-size: 1.6em;
-        }
+.hero {
+  background-color: #5865F2;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
 
-        .subdomain-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5em;
-            flex-wrap: wrap;
-        }
+.hero h2 {
+  font-size: 2.5rem;
+}
 
-        .subdomain-link {
-            background-color: #5865F2;
-            color: white;
-            padding: 1em;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            width: 140px;
-            text-align: center;
-            transition: background-color 0.3s ease;
-        }
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
 
-        .subdomain-link:hover {
-            background-color: #4752C4;
-        }
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
 
-        .discord-button {
-            display: inline-block;
-            background-color: #5865F2;
-            color: white;
-            padding: 0.8em 2em;
-            border-radius: 5px;
-            font-size: 1.1em;
-            margin-top: 1em;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
+.discord-button, .social-button {
+  background-color: white;
+  color: #5865F2;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
 
-        .discord-button:hover {
-            background-color: #4752C4;
-        }
+.discord-button:hover, .social-button:hover {
+  background-color: #f0f0f0;
+}
 
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 1em;
-            text-align: center;
-            font-size: 0.9em;
-        }
+.focus-areas {
+  padding: 4rem 2rem;
+}
 
-        .footer-links a {
-            color: #fff;
-            margin: 0 5px;
-            text-decoration: underline;
-        }
+.focus-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.focus-card {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.focus-card-link {
+  font-weight: bold;
+}
+
+.resources {
+  background-color: #f4f4f4;
+  padding: 4rem 2rem;
+}
+
+.resource-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.resource-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.resource-card-link {
+  font-weight: bold;
+}
+
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contact-button {
+  background-color: #5865F2;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #4752C4;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 0.5rem;
+}
