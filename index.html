@@ -232,15 +232,18 @@
           <a href="https://footage.projectherzl.com" class="resource-card-link">Watch Now</a>
         </div>
       </div>
-    </section>
-
+    </section>  
     <section class="contact" id="contact">
       <h2>Contact Us</h2>
-      <p>Have a question or need support? Reach out to our team.</p>
-      <a href="mailto:support@projectherzl.com" class="contact-button">Contact Support</a>
+      <p>Have a question or need support? Reach out to us!</p>
+      <script>
+        if(!sessionStorage.getItem('alertShown')) {
+          alert("Our Support team is still being set up, join our Discord meanwhile for support!");
+          sessionstorage.setItem('alertShown', 'true');
+        }
+          </script>
+      <!-- <a href="mailto:support@projectherzl.com" class="contact-button">Contact Support</a> -->
     </section>
-  </main>
-
   <footer>
     <p>&copy; 2024 Project Herzl. All rights reserved.</p>
     <div class="footer-links">
