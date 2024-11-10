@@ -100,6 +100,7 @@
       color: var(--jerusalem-stone);
     }
 
+    /* Responsive Navigation */
     @media (max-width: 768px) {
       nav ul {
         flex-direction: column;
@@ -205,7 +206,6 @@
       color: white;
       transform: translateY(-3px);
     }
-
     .about-us {
       padding: 4rem 2rem;
       background: rgba(0, 56, 184, 0.8);
@@ -254,6 +254,8 @@
             <li><a href="https://arguments.projectherzl.com">Arguments</a></li>
             <li><a href="https://footage.projectherzl.com">Footages</a></li>
             <li><a href="mailto:support@projectherzl.com">Contact us</a></li>
+            <li><a href="https://tiktok.com/@projectherzl" target="_blank">TikTok</a></li>
+            <li><a href="https://discord.gg/projectherzl" target="_blank">Discord</a></li>
             <li><a href="#about-us" class="button button-secondary">About Us</a></li>
           </ul>
         </nav>
@@ -266,7 +268,7 @@
         <h1>Project Herzl</h1>
         <p>Uncovering Truth, Preserving History, Building Understanding</p>
         <b style="direction: rtl;">
-          עם האמת בא הצדק, ועם הצדק בא השלום.
+         עם האמת בא הצדק, ועם הצדק בא השלום.
         </b>
 
         <div class="cta-buttons">
@@ -275,14 +277,14 @@
         </div>
       </div>
     </section>
-
     <section id="about-us" class="about-us">
       <div class="section-title">
         <h2>About Us</h2>
       </div>
       <div class="about-content">
-        <p>Project Herzl is dedicated to preserving the truth about Israel’s conflicts and providing accurate information on key historical events, like the October 7th attacks. We combat misinformation and promote understanding through verifiable facts, offering clarity on Israel’s history, struggles, and complex regional dynamics. Our mission is to counter false narratives with transparency, fostering informed discussions for a fair understanding of Israel’s story.We are pro-peace, pro-truth, and pro-justice. We believe everyone deserves a national home, including the palestinians.</p>
-        <a href="#about-us" class="about-us-button">Learn More</a>
+        <p>Project Herzl is a collective effort dedicated to preserving the truth about Israel's conflicts and providing factual information about significant historical events, such as the October 7th attacks. We are committed to shedding light on the injustice caused by misinformation and promoting understanding through accurate, verifiable facts.</p>
+        <p>Our mission is to stand against the spread of false narratives and to offer a platform where people can learn about Israel's history, its struggles, and the context behind key events, including the complex geopolitical dynamics involving Iran and other regional actors. We aim to provide clarity, truth, and transparency in a world often clouded by bias and misinformation.</p>
+        <p>At Project Herzl, we believe in the importance of educating the public and ensuring that future generations have access to historical records free from distortion.</p>
       </div>
     </section>
   </div>
@@ -291,82 +293,24 @@
     function toggleMenu() {
       document.getElementById('menu').classList.toggle('show');
     }
-
+    
     particlesJS('particles-js', {
       "particles": {
-        "number": {
-          "value": 80,
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
-        },
-        "color": {
-          "value": "#ffffff"
-        },
-        "shape": {
-          "type": "circle",
-          "stroke": {
-            "width": 0,
-            "color": "#000000"
-          }
-        },
-        "opacity": {
-          "value": 0.5,
-          "random": true,
-          "anim": {
-            "enable": true,
-            "speed": 1,
-            "opacity_min": 0.1
-          }
-        },
-        "size": {
-          "value": 3,
-          "random": true,
-          "anim": {
-            "enable": true,
-            "speed": 40,
-            "size_min": 0.1
-          }
-        },
-        "line_linked": {
-          "enable": true,
-          "distance": 150,
-          "color": "#ffffff",
-          "opacity": 0.4,
-          "width": 1
-        },
-        "move": {
-          "enable": true,
-          "speed": 6,
-          "direction": "none",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": false
-        }
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 }},
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }},
+        "opacity": { "value": 0.5, "random": true, "anim": { "enable": true, "speed": 1, "opacity_min": 0.1 }},
+        "size": { "value": 3, "random": true, "anim": { "enable": true, "speed": 40, "size_min": 0.1 }},
+        "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
+        "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
       },
       "interactivity": {
         "detect_on": "window",
         "events": {
-          "onhover": {
-            "enable": true,
-            "mode": "repulse"
-          },
-          "onclick": {
-            "enable": true,
-            "mode": "push"
-          }
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" }
         },
-        "modes": {
-          "repulse": {
-            "distance": 100,
-            "duration": 0.4
-          },
-          "push": {
-            "particles_nb": 4
-          }
-        }
+        "modes": { "repulse": { "distance": 100, "duration": 0.4 }, "push": { "particles_nb": 4 }}
       },
       "retina_detect": true
     });
