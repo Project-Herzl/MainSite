@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- האמת מנצחת את הכל -->
+  <!-- באלוהים אנחנו סומכים -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project Herzl</title>
@@ -70,7 +70,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 2rem;
+      padding: 0 1rem;
     }
 
     .logo {
@@ -93,10 +93,44 @@
       text-decoration: none;
       font-weight: 500;
       transition: color 0.3s ease;
+      padding: 0.5rem 1rem;
     }
 
     nav a:hover {
       color: var(--jerusalem-stone);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 56, 184, 0.9);
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        display: none;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      nav a {
+        padding: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+        color: white;
+        margin-left: 1rem;
+      }
     }
 
     .hero {
@@ -172,46 +206,6 @@
       transform: translateY(-3px);
     }
 
-    .focus-areas {
-      padding: 6rem 2rem;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 4rem;
-      color: white;
-    }
-
-    .focus-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .card {
-      padding: 2rem;
-      text-align: center;
-      transition: transform 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-    }
-
-    .card h3 {
-      margin: 1rem 0;
-      font-size: 1.5rem;
-      color: var(--israel-blue);
-    }
-
-    .card p {
-      margin-bottom: 1.5rem;
-      color: #555;
-    }
     .about-us {
       padding: 4rem 2rem;
       background: rgba(0, 56, 184, 0.8);
@@ -224,14 +218,23 @@
       color: #f3d3a3;
     }
 
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.5rem;
-      }
+    .about-us-button {
+      padding: 1rem 2rem;
+      background-color: white;
+      color: var(--israel-blue);
+      border: 2px solid var(--israel-blue);
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 2rem;
+      transition: all 0.3s ease;
+    }
 
-      nav {
-        display: none;
-      }
+    .about-us-button:hover {
+      background-color: var(--israel-blue);
+      color: white;
+      transform: translateY(-3px);
     }
   </style>
 </head>
@@ -245,7 +248,7 @@
           Project Herzl
         </div>
         <nav>
-          <ul>
+          <ul id="menu">
             <li><a href="#">Home</a></li>
             <li><a href="https://forums.projectherzl.com">Forums</a></li>
             <li><a href="https://arguments.projectherzl.com">Arguments</a></li>
@@ -254,6 +257,7 @@
             <li><a href="#about-us" class="button button-secondary">About Us</a></li>
           </ul>
         </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       </div>
     </header>
 
@@ -262,7 +266,7 @@
         <h1>Project Herzl</h1>
         <p>Uncovering Truth, Preserving History, Building Understanding</p>
         <b style="direction: rtl;">
-          האמת מנצחת את הכל
+          עם האמת בא הצדק, ועם הצדק בא השלום.
         </b>
 
         <div class="cta-buttons">
@@ -271,42 +275,23 @@
         </div>
       </div>
     </section>
+
     <section id="about-us" class="about-us">
       <div class="section-title">
         <h2>About Us</h2>
       </div>
       <div class="about-content">
-        <p>Project Herzl is a collective effort dedicated to preserving the truth about Israel's conflicts and providing factual information about significant historical events, such as the October 7th attacks. We are committed to shedding light on the injustice caused by misinformation and promoting understanding through accurate, verifiable facts.</p>
-        <p>Our mission is to stand against the spread of false narratives and to offer a platform where people can learn about Israel's history, its struggles, and the context behind key events, including the complex geopolitical dynamics involving Iran and other regional actors. We aim to provide clarity, truth, and transparency in a world often clouded by bias and misinformation.</p>
-        <p>At Project Herzl, we believe in the importance of educating the public and ensuring that future generations have access to historical records free from distortion.</p>
-      </div>
-    </section>
-
-    <section class="focus-areas">
-      <div class="section-title">
-        <h2>Focus Areas</h2>
-      </div>
-      <div class="focus-cards">
-        <div class="card glass">
-          <h3>Join Our Community</h3>
-          <p>Be part of the conversation. Engage with others and contribute to the growing knowledge base.</p>
-          <a href="https://forums.projectherzl.com" class="button button-secondary">Join Now</a>
-        </div>
-        <div class="card glass">
-          <h3>Explore Our Arguments</h3>
-          <p>Read pro-Israel arguments backed with historical facts, presented with clarity and transparency.</p>
-          <a href="https://arguments.projectherzl.com" class="button button-secondary">Explore Now</a>
-        </div>
-        <div class="card glass">
-          <h3>Watch Footages</h3>
-          <p>Watch videos that document key events and personal experiences related to Israel's history.</p>
-          <a href="https://footages.projectherzl.com" class="button button-secondary">Watch Now</a>
-        </div>
+        <p>Project Herzl is dedicated to preserving the truth about Israel’s conflicts and providing accurate information on key historical events, like the October 7th attacks. We combat misinformation and promote understanding through verifiable facts, offering clarity on Israel’s history, struggles, and complex regional dynamics. Our mission is to counter false narratives with transparency, fostering informed discussions for a fair understanding of Israel’s story.We are pro-peace, pro-truth, and pro-justice. We believe everyone deserves a national home, including the palestinians.</p>
+        <a href="#about-us" class="about-us-button">Learn More</a>
       </div>
     </section>
   </div>
 
   <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('show');
+    }
+
     particlesJS('particles-js', {
       "particles": {
         "number": {
@@ -384,15 +369,6 @@
         }
       },
       "retina_detect": true
-    });
-
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('header');
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
     });
   </script>
 </body>
