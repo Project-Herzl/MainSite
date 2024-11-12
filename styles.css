@@ -98,35 +98,61 @@ nav a:hover {
 
 /* Responsive Navigation */
 @media (max-width: 768px) {
+  /* Basic layout for the navigation */
   nav ul {
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background: rgba(0, 56, 184, 0.9);
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    display: none;
-  }
-
-  nav ul.show {
+    position: fixed; /* Fixed positioning so it stays on top when the page is scrolled */
+    top: 0;
+    right: -250px; /* Start hidden off the screen */
+    width: 250px; /* Sidebar width */
+    height: 100vh; /* Full height */
+    background: rgba(0, 56, 184, 0.9); /* Semi-transparent background */
+    padding: 2rem; /* Padding for the links */
+    border-radius: 0 0 0 10px; /* Rounded left corner */
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3); /* Shadow for a more modern feel */
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transition: right 0.4s ease, opacity 0.3s ease; /* Smooth slide and fade-in effect */
   }
 
+  /* When the menu is toggled, it slides in */
+  nav ul.show {
+    right: 0; /* Slide to the right edge */
+    opacity: 1; /* Full opacity */
+  }
+
+  /* Style for the menu links */
   nav a {
-    padding: 1rem;
-    font-size: 1.2rem;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth hover effect */
   }
 
+  nav a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Slight hover effect */
+    color: #f1f1f1; /* Lighten the text color */
+  }
+
+  /* Toggle button (hamburger menu) */
   .menu-toggle {
     display: block;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
-    margin-left: 1rem;
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Positioned in the top right corner */
+    z-index: 10; /* Make sure it stays on top */
+    transition: transform 0.3s ease; /* Smooth transform on toggle */
+  }
+
+  .menu-toggle.open {
+    transform: rotate(90deg); /* Optional: Rotate the icon when open */
   }
 }
 
