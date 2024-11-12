@@ -10,7 +10,7 @@ function toggleMenu() {
       "opacity": { "value": 0.5, "random": true, "anim": { "enable": true, "speed": 1, "opacity_min": 0.1 }},
       "size": { "value": 3, "random": true, "anim": { "enable": true, "speed": 40, "size_min": 0.1 }},
       "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
-      "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+      "move": { "enable": true, "speed": 1, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
     },
     "interactivity": {
       "detect_on": "window",
@@ -25,6 +25,6 @@ function toggleMenu() {
   
 document.querySelectorAll('img').forEach(function(img) {
     img.addEventListener('contextmenu', function(e) {
-        e.preventDefault(); // Prevent right-click context menu
+        e.preventDefault();
     });
 });

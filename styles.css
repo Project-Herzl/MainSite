@@ -132,7 +132,7 @@ nav a:hover {
 
 @media (min-width: 768px) {
   .menu-toggle {
-    display: none; /* Hides the menu toggle on desktop */
+    display: none;
   }
 }
 
