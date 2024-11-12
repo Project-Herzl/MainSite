@@ -23,3 +23,8 @@ function toggleMenu() {
     "retina_detect": true
   });
   
+document.querySelectorAll('img').forEach(function(img) {
+    img.addEventListener('contextmenu', function(e) {
+        e.preventDefault(); // Prevent right-click context menu
+    });
+});

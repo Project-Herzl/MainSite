@@ -193,20 +193,23 @@ nav a:hover {
 }
 
 .button-primary:hover {
+  background: var(--israel-white);
+  color: var(--israel-blue);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 56, 184, 0.3);
 }
 
 .button-secondary {
   background: transparent;
-  color: var(--israel-white);
-  border: 2px solid var(--israel-white);
+  color: var(--israel-blue);
+  border: 2px solid var(--israel-blue);
 }
 
 .button-secondary:hover {
-  background: var(--israel-white);
-  color: var(--israel-blue);
+  background: var(--israel-blue);
+  color: var(--israel-white);
   transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 56, 184, 0.3);
 }
 
 .about-us {
@@ -222,20 +225,70 @@ nav a:hover {
 }
 
 .about-us-button {
-  padding: 1rem 2rem;
-  background-color: white;
-  color: var(--israel-blue);
-  border: 2px solid var(--israel-blue);
-  border-radius: 50px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 2rem;
-  transition: all 0.3s ease;
+  background: transparent;
+  color: var(--israel-white);
+  border: 2px solid var(--israel-white);
 }
 
 .about-us-button:hover {
-  background-color: var(--israel-blue);
-  color: white;
+  background: var(--israel-white);
+  color: var(--israel-blue);
   transform: translateY(-3px);
 }
+
+.options-section {
+  margin-bottom: 3rem; 
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 56, 184, 0.8);
+  color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  width: 180px; /* Fixed width */
+  height: 180px; /* Fixed height to make it a square */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 56, 184, 0.3);
+}
+
+.option .icon img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 1rem;
+}
+
+.option span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .options-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .option {
+    width: 100%;
+  }
