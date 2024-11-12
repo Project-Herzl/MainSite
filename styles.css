@@ -46,8 +46,13 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000;
+  left: 0;
+  background: rgba(0, 56, 184, 0.5); /* Dark blue with 50% opacity */
+  backdrop-filter: blur(10px);
+  border-bottom-left-radius: 20px; /* Round bottom-left edge */
+  border-bottom-right-radius: 20px; /* Round bottom-right edge */
   transition: background 0.3s ease;
+  z-index: 1000;
 }
 
 header.scrolled {
@@ -125,6 +130,12 @@ nav a:hover {
   }
 }
 
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none; /* Hides the menu toggle on desktop */
+  }
+}
+
 .hero {
   height: 100vh;
   display: flex;
@@ -188,13 +199,13 @@ nav a:hover {
 
 .button-secondary {
   background: transparent;
-  color: var(--israel-blue);
-  border: 2px solid var(--israel-blue);
+  color: var(--israel-white);
+  border: 2px solid var(--israel-white);
 }
 
 .button-secondary:hover {
-  background: var(--israel-blue);
-  color: white;
+  background: var(--israel-white);
+  color: var(--israel-blue);
   transform: translateY(-3px);
 }
 
