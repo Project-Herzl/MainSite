@@ -245,11 +245,6 @@ nav a:hover {
   color: white;
 }
 
-.about-us p {
-  font-size: 1.2rem;
-  color: #f3d3a3;
-}
-
 .about-us-button {
   background: transparent;
   color: var(--israel-white);
