@@ -1,22 +1,15 @@
-// Function to toggle the menu visibility
 function toggleMenu() {
   const menu = document.getElementById('menu');
   menu.classList.toggle('show');
-
-  // Add click listener to close the menu when clicking outside
   if (menu.classList.contains('show')) {
       document.addEventListener('click', closeMenuOnClickOutside);
   } else {
       document.removeEventListener('click', closeMenuOnClickOutside);
   }
 }
-
-// Function to close the menu when clicking outside of it
 function closeMenuOnClickOutside(event) {
   const menu = document.getElementById('menu');
   const menuToggle = document.querySelector('.menu-toggle');
-  
-  // If the clicked element is not inside the menu or the toggle button, close the menu
   if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
       menu.classList.remove('show');
       document.removeEventListener('click', closeMenuOnClickOutside);
